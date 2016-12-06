@@ -50,7 +50,7 @@ Now you only need one of the following two methods, either AIModule (DLL) or AIC
 
 ### TorchCraft AIModule (DLL) for users:
 
-- Download `BWEnv.dll` from [here](https://github.com/TorchCraft/TorchCraft/releases/download/v1.0/BWEnv.dll) and put it in `$STARCRAFT`
+- Extract `BWEnv.dll` from [this archive](https://github.com/TorchCraft/TorchCraft/releases/download/v1.0-0/torchcraft-v1.0-0.zip) and put it in `$STARCRAFT`
 - Run `$STARCRAFT/BWAPI/ChaosLauncher/Chaoslauncher - MultiInstance.exe` **as administrator**.
 - Check the “RELEASE” box from BWAPI.
 - Click Start.
@@ -59,7 +59,7 @@ Now you only need one of the following two methods, either AIModule (DLL) or AIC
 
 ### TorchCraft AIClient (EXE) for users:
 
-- Download `BWEnv.exe` from [here](https://github.com/TorchCraft/TorchCraft/releases/download/v1.0/BWEnv.exe) and put it in `$STARCRAFT`.
+- Extract `BWEnv.exe` from [this archive](https://github.com/TorchCraft/TorchCraft/releases/download/v1.0-0/torchcraft-v1.0-0.zip) and put it in `$STARCRAFT`.
 - Run `$STARCRAFT/BWEnv.exe`.
 - Goto [Installing the Torch client (Linux)](#installing-the-torch-client-linux)
 
@@ -99,4 +99,4 @@ In a terminal or CLI, type:
     $ cd torchcraft
     $ luarocks make torchcraft-1.0-0.rockspec
     $ cd examples/
-    $ th simple_{exe|dll}.lua # depending on if you launched the exe or dll
+    $ th simple_{exe|dll}.lua -t $server_ip # depending on if you launched the exe or dll
